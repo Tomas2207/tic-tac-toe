@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 0.2fr 0.2fr 2fr;
+
+  justify-content: center;
+  align-items: center;
+  font-family: "Gluten", cursive;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  background-color: pink;
+  border: 1px solid purple;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 4em;
+  font-weight: bold;
+  font-family: "Gluten", cursive;
+
+  border-radius: 15px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+}
+
+button {
+  font-family: "Gluten", cursive;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: pink;
+  border: 2px solid purple;
+}
+
+input {
+  border-radius: 10px;
+  border: 2px solid purple;
+  padding: 10px 15px;
+  font-family: "Gluten", cursive;
+}
+
+.name-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
