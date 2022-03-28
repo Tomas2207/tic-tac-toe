@@ -2,17 +2,19 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   height: 100%;
+  width: 100%;
 
   display: grid;
-  grid-template-rows: 0.2fr 0.2fr 2fr;
+  grid-template-rows: 0.2fr 0.1fr 0.1fr 3fr;
 
-  justify-content: center;
-  align-items: center;
   font-family: "Gluten", cursive;
+
+  background-color: rgb(212, 136, 149);
 }
 
 .title {
@@ -24,6 +26,8 @@ body {
 .tile {
   background-color: pink;
   border: 1px solid purple;
+  /* width: 100%;
+  height: 100%; */
 
   display: flex;
   justify-content: center;
@@ -38,12 +42,18 @@ body {
 
 .game-board {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
+  width: 50vh;
+  height: 50vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  align-self: center;
+  justify-self: center;
 }
 
 button {
   font-family: "Gluten", cursive;
+  font-size: 0.6em;
   padding: 10px 15px;
   border-radius: 15px;
   background-color: pink;
@@ -62,4 +72,12 @@ input {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
+  font-size: 2em;
+}
+
+.winner {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
 }
