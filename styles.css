@@ -1,18 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap');
 
 html {
   height: 100%;
   width: 100%;
+
+  margin: 0;
 }
 
 body {
   height: 100%;
   width: 100%;
+  margin: 0;
 
   display: grid;
   grid-template-rows: 0.2fr 0.1fr 0.1fr 3fr;
 
-  font-family: "Gluten", cursive;
+  font-family: 'Gluten', cursive;
 
   background-color: rgb(212, 136, 149);
 }
@@ -25,7 +28,7 @@ body {
 
 .tile {
   background-color: pink;
-  border: 1px solid purple;
+  border: 5px solid purple;
   /* width: 100%;
   height: 100%; */
 
@@ -35,9 +38,9 @@ body {
 
   font-size: 4em;
   font-weight: bold;
-  font-family: "Gluten", cursive;
+  font-family: 'Gluten', cursive;
 
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .game-board {
@@ -49,10 +52,11 @@ body {
 
   align-self: center;
   justify-self: center;
+  gap: 1px;
 }
 
 button {
-  font-family: "Gluten", cursive;
+  font-family: 'Gluten', cursive;
   font-size: 0.6em;
   padding: 10px 15px;
   border-radius: 15px;
@@ -64,7 +68,7 @@ input {
   border-radius: 10px;
   border: 2px solid purple;
   padding: 10px 15px;
-  font-family: "Gluten", cursive;
+  font-family: 'Gluten', cursive;
 }
 
 .name-input {
